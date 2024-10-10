@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batch-24 | DTTC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo/Title -->
+          <a href="#" class="text-white text-2xl font-bold">Batch 24 Alumni</a>
+
+          <!-- Desktop Menu Links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-300 hover:text-white">Home</a>
+            <a href="#" class="text-gray-300 hover:text-white">About</a>
+            <a href="#batchmates" class="text-gray-300 hover:text-white"
+              >Batchmates</a
+            >
+            <a href="#memories" class="text-gray-300 hover:text-white"
+              >Memories</a
+            >
+            <a href="#" class="text-gray-300 hover:text-white">Contact Us</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-gray-300 focus:outline-none"
+            id="mobile-menu-button"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="hidden md:hidden mt-2 space-y-2" id="mobile-menu">
+          <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
+          <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
+          <a href="#" class="block text-gray-300 hover:text-white p-2"
+            >Batchmates</a
+          >
+          <a href="#" class="block text-gray-300 hover:text-white p-2"
+            >Memories</a
+          >
+          <a href="#" class="block text-gray-300 hover:text-white p-2"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="bg-blue-500 text-white h-screen flex flex-col justify-center items-center"
+      >
+        <h1 class="text-5xl font-bold mb-4 text-center">
+          Welcome to Batch 24 Alumni Page!
+        </h1>
+        <p class="text-xl text-center mb-6">
+          Celebrating the journey and memories we've shared together.
+        </p>
+        <div>
+          <a
+            href="#batchmates"
+            class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-100"
+            >Explore Batchmates</a
+          >
+          <a
+            href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
+            class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold"
+            target="_blank"
+            >Share Your Memories</a
+          >
+        </div>
+      </section>
+
+      <!-- Batchmates Section -->
+      <section id="batchmates" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-10">Meet Our Batchmates</h2>
+          <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8">
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+<div
+  id="avijitModal"
+  class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+>
+  <div
+    class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-0 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+  >
+    <button
+      class="absolute top-2 right-2 text-gray-500"
+      onclick="closeModal('avijit')"
+    >
+      &times;
+    </button>
+    
+    <!-- Image Section -->
+    <div class="w-full md:w-1/2 flex justify-center  mb-2 md:mb-0">
+      <img
+        src="./media/avijit.jpg"
+        alt="Batchmate"
+        class="w-full h-48 rounded-lg md:w-full md:h-full "
+      />
+    </div>
+    
+    <!-- Information Section -->
+    <div class="w-full md:w-1/2 text-left p-2 text-sm ">
+      <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">Avijit Roy</h2>
+      <p class="text-gray-700 md:mb-4">Panchagor District</p>
+      <p class="text-gray-600 md:mb-2">
+        <strong>Birth Day:</strong> January 10, 1990
+      </p>
+      <p class="text-gray-600 md:mb-2">
+        <strong>Profession:</strong> Software Engineer
+      </p>
+      <p class="text-gray-600 md:mb-2">
+        <strong>Company:</strong> XYZ Technologies
+      </p>
+      <p class="text-gray-600 md:mb-2">
+        <strong>Email:</strong> avijit.roy@example.com
+      </p>
+      <p class="text-gray-600 md:mb-2">
+        <strong>Phone:</strong> +880 1XXXXXXXXX
+      </p>
+      <p class="text-gray-600 text-justify">
+        <strong>Bio:</strong> Avijit is a passionate software engineer
+        with a love for coding and technology. He enjoys solving
+        complex problems and building innovative solutions.
+      </p>
+    </div>
+  </div>
+</div>
+
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <!-- Batchmate 1 -->
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-10/12 md:w-2/3 lg:w-1/2 p-6 rounded-lg flex"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/avijit.jpg"
+                    alt="Batchmate"
+                    class="w-1/2 mr-4"
+                  />
+                  <div class="w-1/2 text-left">
+                    <h2 class="text-3xl font-bold mb-2">Avijit Roy(89)</h2>
+                    <p class="text-gray-700 mb-4">Panchagor District</p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Birth Day:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Profession:</strong> Software Engineer
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Company:</strong> XYZ Technologies
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600">
+                      <strong>Bio:</strong> Avijit is a passionate software
+                      engineer with a love for coding and technology. He enjoys
+                      solving complex problems and building innovative
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for other batchmates -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Memories Section -->
+      <section id="memories" class="py-16 bg-blue-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-10">Memories Through the Years</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Memory 1 -->
+            <!-- Memory Card with View More -->
+            <div class="relative">
+              <img
+                src="./media/memory1.jpg"
+                alt="Memory"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+              <div
+                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
+                onclick="openModal('memory1')"
+              >
+                <span class="text-white text-lg font-bold">View More</span>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div
+              id="memory1Modal"
+              class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+            >
+              <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
+                <button
+                  class="absolute top-2 right-2 text-gray-500"
+                  onclick="closeModal('memory1')"
+                >
+                  &times;
+                </button>
+                <img
+                  src="./media/memory1.jpg"
+                  alt="Memory Image"
+                  class="w-full h-auto mb-4 rounded-lg"
+                />
+                <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
+                <p class="text-gray-700 mb-4">
+                  Here is the full description of the memory. The detailed story
+                  can go here, including the time, people involved, and other
+                  memorable aspects.
+                </p>
+              </div>
+            </div>
+
+            <!-- m2 -->
+            <div class="relative">
+              <img
+                src="./media/memory1.jpg"
+                alt="Memory"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+              <div
+                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center"
+              >
+                <span class="text-white text-lg font-bold">View More</span>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                src="./media/memory1.jpg"
+                alt="Memory"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+              <div
+                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center"
+              >
+                <span class="text-white text-lg font-bold">View More</span>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                src="./media/memory1.jpg"
+                alt="Memory"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+              <div
+                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center"
+              >
+                <span class="text-white text-lg font-bold">View More</span>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                src="./media/memory1.jpg"
+                alt="Memory"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+              <div
+                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center"
+              >
+                <span class="text-white text-lg font-bold">View More</span>
+              </div>
+            </div>
+            <!-- Repeat for other memories -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./JS/batch-24.js"></script>
+  </body>
+</html>
