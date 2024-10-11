@@ -77,7 +77,7 @@
     <main>
       <!-- Hero Section -->
       <section
-        class="relative text-white h-screen flex flex-col justify-center items-center"
+        class="relative text-white h-80 md:h-screen flex flex-col justify-center items-center"
         style="
           background-image: url('./media/cover.jpg');
           background-size: cover;
@@ -89,21 +89,21 @@
         ></div>
 
         <div class="relative z-10 text-center">
-          <h1 class="text-5xl font-bold mb-4">
+          <h1 class=" text-3xl md:text-5xl font-bold mb-4">
             Welcome to Batch 24 Alumni Page!
           </h1>
           <p class="text-xl mb-6">
             Celebrating the journey and memories we've shared together.
           </p>
-          <div>
+          <div class="flex flex-col md:flex-row justify-center px-4 gap-4 md:gap-8">
             <a
               href="#batchmates"
-              class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-100"
+              class="bg-white text-blue-500 py-3 px-6 rounded-full md:text-lg font-semibold hover:bg-gray-100"
               >Explore Batchmates</a
             >
             <a
               href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
-              class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold"
+              class="bg-white text-blue-500 py-3 px-6 rounded-full md:text-lg font-semibold"
               target="_blank"
               >Share Your Memories</a
             >
@@ -115,7 +115,7 @@
       <section id="batchmates" class="py-16 bg-gray-100">
         <div class="container mx-auto text-center">
           <h2 class="text-4xl font-bold mb-10">Meet Our Batchmates</h2>
-          <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 px-4 place-items-center">
             <!-- Batchmate 1 -->
             <div>
               <div
@@ -627,7 +627,7 @@
       <section id="memories" class="py-16 bg-blue-100">
         <div class="container mx-auto text-center">
           <h2 class="text-4xl font-bold mb-10">Memories Through the Years</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4">
             <!-- Memory 1 -->
             <div>
               <!-- Memory Card with View More -->
