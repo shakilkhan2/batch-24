@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Batch-24 | DTTC</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/2f678b91de.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -54,7 +58,9 @@
         <!-- Mobile Menu (hidden by default) -->
         <div class="hidden md:hidden mt-2 space-y-2" id="mobile-menu">
           <a href="#" class="block text-white hover:text-amber-500 p-2">Home</a>
-          <a href="#" class="block text-white hover:text-amber-500 p-2">About</a>
+          <a href="#" class="block text-white hover:text-amber-500 p-2"
+            >About</a
+          >
           <a href="#" class="block text-white hover:text-amber-500 p-2"
             >Batchmates</a
           >
@@ -70,42 +76,46 @@
     <!-- Main Section -->
     <main>
       <!-- Hero Section -->
-<section
-  class="relative text-white h-screen flex flex-col justify-center items-center"
-  style="background-image: url('./media/cover.jpg'); background-size: cover; background-position: center;"
->
-  <div class="bg-black bg-opacity-50 w-full h-full absolute inset-0"></div>
-  
-  <div class="relative z-10 text-center">
-    <h1 class="text-5xl font-bold mb-4">
-      Welcome to Batch 24 Alumni Page!
-    </h1>
-    <p class="text-xl mb-6 ">
-      Celebrating the journey and memories we've shared together.
-    </p>
-    <div>
-      <a
-        href="#batchmates"
-        class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-100"
-        >Explore Batchmates</a
+      <section
+        class="relative text-white h-screen flex flex-col justify-center items-center"
+        style="
+          background-image: url('./media/cover.jpg');
+          background-size: cover;
+          background-position: center;
+        "
       >
-      <a
-        href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
-        class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold"
-        target="_blank"
-        >Share Your Memories</a
-      >
-    </div>
-  </div>
-</section>
+        <div
+          class="bg-black bg-opacity-50 w-full h-full absolute inset-0"
+        ></div>
 
+        <div class="relative z-10 text-center">
+          <h1 class="text-5xl font-bold mb-4">
+            Welcome to Batch 24 Alumni Page!
+          </h1>
+          <p class="text-xl mb-6">
+            Celebrating the journey and memories we've shared together.
+          </p>
+          <div>
+            <a
+              href="#batchmates"
+              class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-100"
+              >Explore Batchmates</a
+            >
+            <a
+              href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
+              class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg font-semibold"
+              target="_blank"
+              >Share Your Memories</a
+            >
+          </div>
+        </div>
+      </section>
 
       <!-- Batchmates Section -->
       <section id="batchmates" class="py-16 bg-gray-100">
         <div class="container mx-auto text-center">
           <h2 class="text-4xl font-bold mb-10">Meet Our Batchmates</h2>
           <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8">
-
             <!-- Batchmate 1 -->
             <div>
               <div
@@ -159,15 +169,9 @@
                     <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
                       Avijit Roy
                     </h2>
-                    <p class="text-gray-700 md:mb-4">Panchagor District</p>
+                    <p class="text-gray-700 md:mb-4">Panchagarh</p>
                     <p class="text-gray-600 md:mb-2">
-                      <strong>Birth Day:</strong> January 10, 1990
-                    </p>
-                    <p class="text-gray-600 md:mb-2">
-                      <strong>Profession:</strong> Software Engineer
-                    </p>
-                    <p class="text-gray-600 md:mb-2">
-                      <strong>Company:</strong> XYZ Technologies
+                      <strong>Birth Day:</strong> January 10
                     </p>
                     <p class="text-gray-600 md:mb-2">
                       <strong>Email:</strong> avijit.roy@example.com
@@ -176,16 +180,25 @@
                       <strong>Phone:</strong> +880 1XXXXXXXXX
                     </p>
                     <p class="text-gray-600 text-justify">
-                      <strong>Bio:</strong> Avijit is a passionate software
-                      engineer with a love for coding and technology. He enjoys
-                      solving complex problems and building innovative
-                      solutions.
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
                     </p>
+                    <a href="https://www.facebook.com/avi49503" target="_blank">
+                      <p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-<!-- Batchmate 2 -->
+            <!-- Batchmate 2 -->
             <div>
               <div
                 class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
@@ -238,28 +251,369 @@
                     <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
                       Abu Sayed
                     </h2>
-                    <p class="text-gray-700 md:mb-4">Rajbari Zilla</p>
+                    <p class="text-gray-700 md:mb-4">Rajbari</p>
                     <p class="text-gray-600 md:mb-2">
-                      <strong>Birth Day:</strong> January 10, 1990
+                      <strong>Birth Day:</strong> November, 23
                     </p>
                     <p class="text-gray-600 md:mb-2">
-                      <strong>Profession:</strong> Software Engineer
+                      <strong>Email:</strong> abusayeddu8@gmail.com
                     </p>
                     <p class="text-gray-600 md:mb-2">
-                      <strong>Company:</strong> XYZ Technologies
-                    </p>
-                    <p class="text-gray-600 md:mb-2">
-                      <strong>Email:</strong> avijit.roy@example.com
-                    </p>
-                    <p class="text-gray-600 md:mb-2">
-                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                      <strong>Phone:</strong> +880 1517012867
                     </p>
                     <p class="text-gray-600 text-justify">
-                      <strong>Bio:</strong> Avijit is a passionate software
-                      engineer with a love for coding and technology. He enjoys
-                      solving complex problems and building innovative
-                      solutions.
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
                     </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 3 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/alom.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('alom')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="alomModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('alom')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/alom.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Alom Badsha
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 4 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/ashik.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('ashik')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="ashikModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('ashik')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/ashik.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Ashikur Rahman
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 5 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/naimur.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('naimur')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="naimurModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('naimur')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/naimur.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Naimur Rahman
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 6 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/hridoy.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('hridoy')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="hridoyModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('hridoy')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/hridoy.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Hridoy Akond
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Gazipur</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -276,88 +630,132 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Memory 1 -->
             <div>
-                <!-- Memory Card with View More -->
-            <div class="relative">
-              <img
-                src="./media/m-2.jpg"
-                alt="Memory"
-                class="w-full h-64 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
-                onclick="openModal('memory1')"
-              >
-                <span class="text-white text-lg font-bold">View More</span>
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div
-              id="memory1Modal"
-              class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
-            >
-              <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
-                <button
-                  class="absolute top-2 right-2 text-gray-500"
-                  onclick="closeModal('memory1')"
-                >
-                  &times;
-                </button>
+              <!-- Memory Card with View More -->
+              <div class="relative">
                 <img
                   src="./media/m-2.jpg"
-                  alt="Memory Image"
-                  class="w-full h-auto mb-4 rounded-lg"
+                  alt="Memory"
+                  class="w-full h-64 object-cover rounded-lg"
                 />
-                <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
-                <p class="text-gray-700 mb-4">
-                  Here is the full description of the memory. The detailed story
-                  can go here, including the time, people involved, and other
-                  memorable aspects.
-                </p>
-              </div>
-            </div>
-            </div>
-<div>
-                <!-- Memory Card with View More -->
-            <div class="relative">
-              <img
-                src="./media/m3.jpg"
-                alt="Memory"
-                class="w-full h-64 object-cover rounded-lg"
-              />
-              <div
-                class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
-                onclick="openModal('memory3')"
-              >
-                <span class="text-white text-lg font-bold">View More</span>
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div
-              id="memory3Modal"
-              class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
-            >
-              <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
-                <button
-                  class="absolute top-2 right-2 text-gray-500"
-                  onclick="closeModal('memory3')"
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
+                  onclick="openModal('memory1')"
                 >
-                  &times;
-                </button>
+                  <span class="text-white text-lg font-bold">View More</span>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                id="memory1Modal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('memory1')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/m-2.jpg"
+                    alt="Memory Image"
+                    class="w-full h-auto mb-4 rounded-lg"
+                  />
+                  <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
+                  <p class="text-gray-700 mb-4">
+                    Here is the full description of the memory. The detailed
+                    story can go here, including the time, people involved, and
+                    other memorable aspects.
+                  </p>
+                </div>
+              </div>
+            </div>
+             <!-- Memory Card with View More -->
+            <div>
+             
+              <div class="relative">
                 <img
                   src="./media/m3.jpg"
-                  alt="Memory Image"
-                  class="w-full h-auto mb-4 rounded-lg"
+                  alt="Memory"
+                  class="w-full h-64 object-cover rounded-lg"
                 />
-                <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
-                <p class="text-gray-700 mb-4">
-                  Here is the full description of the memory. The detailed story
-                  can go here, including the time, people involved, and other
-                  memorable aspects.
-                </p>
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
+                  onclick="openModal('memory3')"
+                >
+                  <span class="text-white text-lg font-bold">View More</span>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                id="memory3Modal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('memory3')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/m3.jpg"
+                    alt="Memory Image"
+                    class="w-full h-auto mb-4 rounded-lg"
+                  />
+                  <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
+                  <p class="text-gray-700 mb-4">
+                    Here is the full description of the memory. The detailed
+                    story can go here, including the time, people involved, and
+                    other memorable aspects.
+                  </p>
+                </div>
               </div>
             </div>
+            <!-- Memory Card with View More -->
+            <div>
+             
+              <div class="relative">
+                <img
+                  src="./media/m4.jpg"
+                  alt="Memory"
+                  class="w-full h-64 object-cover rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-50 hover:opacity-75 transition-opacity flex justify-center items-center cursor-pointer"
+                  onclick="openModal('memory4')"
+                >
+                  <span class="text-white text-lg font-bold">View More</span>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                id="memory4Modal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div class="bg-white w-10/12 md:w-1/2 p-5 rounded-lg">
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('memory4')"
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src="./media/m4.jpg"
+                    alt="Memory Image"
+                    class="w-full h-auto mb-4 rounded-lg"
+                  />
+                  <h2 class="text-2xl font-bold mb-4">Memory Title</h2>
+                  <p class="text-gray-700 mb-4">
+                    Here is the full description of the memory. The detailed
+                    story can go here, including the time, people involved, and
+                    other memorable aspects.
+                  </p>
+                </div>
+              </div>
             </div>
             <!-- Repeat for other memories -->
           </div>
