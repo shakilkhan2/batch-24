@@ -86,7 +86,7 @@
       </nav>
     </header>
     <!-- Main Section -->
-    <main class="mt-16"> 
+    <main class="">
       <!-- Hero Section -->
       <section
         class="relative text-white h-80 md:h-screen flex flex-col justify-center items-center"
@@ -101,13 +101,13 @@
         ></div>
 
         <div class="relative z-10 text-center px-4">
-          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4 pt-20 md:pt-0">
             Welcome to Batch 24 Alumni Page!
           </h1>
           <p class="text-lg md:text-xl mb-6">
             Celebrating the journey and memories we've shared together.
           </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+          <div class="hidden md:block">
             <a
               href="./batchmates.html"
               class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg sm:text-lg font-semibold hover:bg-gray-100"
@@ -116,7 +116,7 @@
             </a>
             <a
               href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
-              class="bg-white text-blue-500 py-3 px-6 rounded-full text-lg sm:text-lg font-semibold"
+              class="ml-8 bg-white text-blue-500 py-3 px-6 rounded-full text-lg sm:text-lg font-semibold"
               target="_blank"
             >
               Share Your Memories
@@ -125,8 +125,27 @@
         </div>
       </section>
     </main>
+    <!-- btn for small device -->
+    <div
+      class="flex md:hidden flex-col items-center justify-center gap-2 my-8"
+    >
+      <a href="./batchmates.html">
+        <button
+          class="bg-gray-800 text-amber-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-900"
+        >
+          Explore Batchmates
+        </button>
+      </a>
+      <a href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit">
+        <button
+          class="bg-gray-800 text-amber-500 py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-900"
+        >
+          Explore Batchmates
+        </button>
+      </a>
+    </div>
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white pt-20 mt-auto">
+    <footer class="bg-gray-800 text-white pt-12 mt-auto">
       <div id="contact" class="container mx-auto text-center">
         <h2 class="text-2xl font-bold">Contact Us</h2>
         <p class="text-lg mb-2">
