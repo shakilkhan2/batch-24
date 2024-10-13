@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Batch-24 | DTTC</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch24 - About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/2f678b91de.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
+</head>
+<body>
     <header class="shadow-lg fixed top-0 left-0 w-full z-50">
       <!-- Navbar -->
       <nav class="bg-gray-800 p-4">
@@ -23,14 +23,14 @@
           <!-- Desktop Menu Links -->
           <div class="hidden md:flex space-x-6">
             <a href="./" class="text-white hover:text-amber-500">Home</a>
-            <a href="./about.html" class="text-white hover:text-amber-500">About</a>
+            <a href="#" class="text-white hover:text-amber-500">About</a>
             <a href="./batchmates.html" class="text-white hover:text-amber-500"
               >Batchmates</a
             >
             <a href="./memories.html" class="text-white hover:text-amber-500"
               >Memories</a
             >
-            <a href="#contact" class="text-white hover:text-amber-500">Contact Us</a>
+            <a href="#" class="text-white hover:text-amber-500">Contact Us</a>
           </div>
 
           <!-- Mobile Menu Button -->
@@ -58,7 +58,7 @@
         <!-- Mobile Menu (hidden by default) -->
         <div class="hidden md:hidden mt-2 space-y-2" id="mobile-menu">
           <a href="./" class="block text-white hover:text-amber-500 p-2">Home</a>
-          <a href="./about.html" class="block text-white hover:text-amber-500 p-2"
+          <a href="#" class="block text-white hover:text-amber-500 p-2"
             >About</a
           >
           <a href="./batchmates.html" class="block text-white hover:text-amber-500 p-2"
@@ -67,53 +67,35 @@
           <a href="./memories.html" class="block text-white hover:text-amber-500 p-2"
             >Memories</a
           >
-          <a href="#" class="block text-white hover:text-amber-500 p-2"
+          <a href="#contact" class="block text-white hover:text-amber-500 p-2"
             >Contact Us</a
           >
         </div>
       </nav>
     </header>
-    <!-- Main Section -->
     <main>
-      <!-- Hero Section -->
-      <section
-        class="relative text-white h-80 md:h-screen flex flex-col justify-center items-center"
-        style="
-          background-image: url('./media/cover.jpg');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div
-          class="bg-black bg-opacity-50 w-full h-full absolute inset-0"
-        ></div>
+<!-- About Section -->
+<section id="about" class="py-16 bg-white text-gray-800">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">About Batch 24 Alumni</h2>
+    <p class="text-lg mb-6">
+      We are a group of passionate individuals who graduated together in 2019 from
+      the Government Teachers' Training College, Dhaka. Our journey over the years
+      has been filled with learning, growth, and countless memories. Now, we are
+      here to celebrate our achievements and stay connected as we move forward in our careers and lives.
+    </p>
 
-        <div class="relative z-10 text-center">
-          <h1 class=" text-3xl md:text-5xl font-bold mb-4">
-            Welcome to Batch 24 Alumni Page!
-          </h1>
-          <p class="text-xl mb-6">
-            Celebrating the journey and memories we've shared together.
-          </p>
-          <div class="flex flex-col md:flex-row justify-center px-4 gap-4 md:gap-8">
-            <a
-              href="./batchmates.html"
-              class="bg-white text-blue-500 py-3 px-6 rounded-full md:text-lg font-semibold hover:bg-gray-100"
-              >Explore Batchmates</a
-            >
-            <a
-              href="https://docs.google.com/forms/d/1UfTsiBqBeKyasio6cWGdz0SztxeAwxsn9T3Vkwb0ejA/edit"
-              class="bg-white text-blue-500 py-3 px-6 rounded-full md:text-lg font-semibold"
-              target="_blank"
-              >Share Your Memories</a
-            >
-          </div>
-        </div>
-      </section>
+    <div class="flex justify-center">
+      <div class="max-w-xl">
+        <p class="text-lg">
+          The Batch 24 Alumni page is a place for us to reconnect, share memories, and support one another.
+          Whether you're looking to network, share stories, or just catch up with old friends, this site is for you!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      
-
-      
     </main>
     <!-- Footer Section -->
 <footer class="bg-gray-800 text-white pt-12">
@@ -135,8 +117,6 @@
     </div>
   </div>
 </footer>
-
-
-    <script src="./JS/batch-24.js"></script>
-  </body>
+<script src="./JS/batch-24.js"></script>
+</body>
 </html>
