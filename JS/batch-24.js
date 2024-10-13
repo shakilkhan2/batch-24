@@ -40,3 +40,5 @@ function closeModal(profileId) {
   const modal = document.getElementById(profileId + "Modal");
   modal.classList.add("hidden");
 }
+
+console.log("got it!")

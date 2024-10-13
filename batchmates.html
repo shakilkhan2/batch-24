@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch24 - Members</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+      <!-- Navbar -->
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo/Title -->
+          <a href="./" class="text-white text-2xl font-bold"
+            >Batch<span class="text-3xl text-orange-500">24</span> Alumni</a
+          >
+
+          <!-- Desktop Menu Links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="./" class="text-white hover:text-amber-500">Home</a>
+            <a href="#" class="text-white hover:text-amber-500">About</a>
+            <a href="./batchmates.html" class="text-white hover:text-amber-500"
+              >Batchmates</a
+            >
+            <a href="./memories.html" class="text-white hover:text-amber-500"
+              >Memories</a
+            >
+            <a href="#" class="text-white hover:text-amber-500">Contact Us</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-gray-300 focus:outline-none"
+            id="mobile-menu-button"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="hidden md:hidden mt-2 space-y-2" id="mobile-menu">
+          <a href="./" class="block text-white hover:text-amber-500 p-2">Home</a>
+          <a href="#" class="block text-white hover:text-amber-500 p-2"
+            >About</a
+          >
+          <a href="./batchmates.html" class="block text-white hover:text-amber-500 p-2"
+            >Batchmates</a
+          >
+          <a href="./memories.html" class="block text-white hover:text-amber-500 p-2"
+            >Memories</a
+          >
+          <a href="#" class="block text-white hover:text-amber-500 p-2"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+        <!-- Batchmates Section -->
+      <section id="batchmates" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-10">Meet Our Batchmates</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 px-4 place-items-center">
+            <!-- Batchmate 1 -->
+            <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/avijit.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('avijit')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="avijitModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('avijit')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/avijit.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Avijit Roy
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Panchagarh</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> January 10
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> avijit.roy@example.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1XXXXXXXXX
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a href="https://www.facebook.com/avi49503" target="_blank">
+                      <p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 2 -->
+            <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/sayed.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('abu')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="abuModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('abu')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/sayed.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Abu Sayed
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Rajbari</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 3 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/alom.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('alom')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="alomModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('alom')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/alom.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Alom Badsha
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 4 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/ashik.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('ashik')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="ashikModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('ashik')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/ashik.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Ashikur Rahman
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 5 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/naimur.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('naimur')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="naimurModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('naimur')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/naimur.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Naimur Rahman
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Dhaka</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 6 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/hridoy.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('hridoy')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="hridoyModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('hridoy')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/hridoy.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Hridoy Akond
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Gazipur</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batchmate 7 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/sifat.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('sifat')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="sifatModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('sifat')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/sifat.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Md. Sifat Ahmed
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Gazipur</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Batcmate 8 -->
+             <div>
+              <div
+                class="relative bg-white md:pt-4 w-32 h-32 md:w-40 md:h-40 rounded-full md:rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  src="./media/raihan.jpg"
+                  alt="Batchmate"
+                  class="w-32 h-32 mx-auto rounded-full"
+                />
+
+                <div
+                  class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-75 transition-opacity flex justify-center items-center rounded-lg"
+                >
+                  <a
+                    href="#"
+                    class="text-white font-semibold py-2 px-4 rounded-lg"
+                    onclick="openProfileModal('raihan')"
+                  >
+                    View Profile
+                  </a>
+                </div>
+              </div>
+
+              <!-- Modal for Viewing Full Profile -->
+              <div
+                id="raihanModal"
+                class="fixed z-50 inset-0 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center"
+              >
+                <div
+                  class="bg-white w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2 p-4 md:p-6 rounded-lg flex flex-col md:flex-row md:gap-4"
+                >
+                  <button
+                    class="absolute top-2 right-2 text-gray-500"
+                    onclick="closeModal('raihan')"
+                  >
+                    &times;
+                  </button>
+
+                  <!-- Image Section -->
+                  <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0">
+                    <img
+                      src="./media/raihan.jpg"
+                      alt="Batchmate"
+                      class="w-48 h-48 rounded-lg md:w-full md:h-full"
+                    />
+                  </div>
+
+                  <!-- Information Section -->
+                  <div class="w-full md:w-1/2 text-left p-2 text-sm">
+                    <h2 class="text-2xl sm:text-3xl font-bold md:mb-2">
+                      Rashedul Islam 
+                    </h2>
+                    <p class="text-gray-700 md:mb-4">Mymansingh</p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Birth Day:</strong> November, 23
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Email:</strong> abusayeddu8@gmail.com
+                    </p>
+                    <p class="text-gray-600 md:mb-2">
+                      <strong>Phone:</strong> +880 1517012867
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                      <strong>About:</strong> Abu Sayed was known for his
+                      supportive nature, always helping friends and juniors. His
+                      strong connections with teachers and the college
+                      administration earned him the nickname "Boss" among his
+                      peers, reflecting his leadership and positive influence
+                      during his Honors life.
+                    </p>
+                    <a
+                      href="https://www.facebook.com/abu.sayed.92123015"
+                      target="_blank"
+                    ><p
+                        class="bg-blue-500 text-white font-bold p-2 rounded-lg text-center"
+                      >
+                        facebook
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for other batchmates -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./JS/batch-24.js"></script>
+</body>
+</html>
